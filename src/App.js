@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 export default function App() {
 	const questions = [
 		{
-			questionText: 'Is it Serverless?',
+			questionText: 'Are you/do you want your application to be Serverless?',
 			answerOptions: [
 				{ answerText: 'Yes', SAM: true, CDK: true, CF: false },
 				{ answerText: 'No', SAM: false, CDK: false, CF: true },
 			],
 		},
 		{
-			questionText: 'Are you using containers?',
+			questionText: 'Are you/do you plan to use containers?',
 			answerOptions: [
 				{ answerText: 'Yes', SAM: false, CDK: true, CF: false},
 				{ answerText: 'No', SAM: true, CDK: false, CF: true},
@@ -38,7 +38,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: 'Speed: Do you need an IaC solution which will procure the fastest method of deployment in an application lifecycle? For instance, more development speed or possibility for faster deployment due to future lambda features?',
+			questionText: 'Speed: Do you need an IaC solution which will procure the fastest method of deployment in an application lifecycle?',
 			answerOptions: [
 				{ answerText: 'Yes', SAM: true, CDK: true, CF: false },
 				{ answerText: 'No', SAM: false, CDK: false, CF: true },
